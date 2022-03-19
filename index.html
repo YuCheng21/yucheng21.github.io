@@ -1,95 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <meta name="author" content="Yu-Cheng, Feng" />
-    <meta name="description" content="Thomas Feng, a electrical engineering student in Taiwan." />
-    <meta property="og:site_name" content="Thomas Feng" />
-    <meta property="og:url" content="https://yucheng.me/" />
-    <meta property="og:title" content="Thomas Feng" />
-    <meta property="og:description" content="Thomas Feng, a electrical engineering student in Taiwan." />
-    <meta property="og:image" content="https://yucheng.me/static/avatar-3.jpg" />
-    <meta property="twitter:image" content="https://yucheng.me/static/avatar-3.jpg" />
-    <meta property="og:locale" content="en-us" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thomas Feng</title>
-    <link rel="stylesheet" href="css/styles.css" />
 
-    <link rel="shortcut icon" href="static/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png"/>
-    <link rel="manifest" href="static/favicon/site.webmanifest"/>
-    <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="resources/img/favicon/site.webmanifest"/>
+    <link rel="mask-icon" href="resources/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#444444"/>
     <meta name="theme-color" content="#ffffff"/>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HG5DQH9CV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4HG5DQH9CV');
-    </script>
-  </head>
-  <body>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <img style="border-radius: 50%;" width="200px" src="static/avatar-3.jpg" />
-          <h1 class="title is-spaced" style="margin-bottom: 20px;">Thomas Feng ( Yu-Cheng, Feng )</h1>
+    <link rel="stylesheet" href="resources/scss/all.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/designmodo/Flat-UI/master/dist/css/flat-ui.min.css">
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-xl bg-primary px-3 fixed-top shadow">
+    <div class="container-fluid">
+        <a href="/" class="navbar-brand fs-1 fw-bold py-0 ds-100 hover-scale hover-color-text">
+            <span>Thomas Feng</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+            <ul class="navbar-nav fs-4 fw-bold ds-100">
+                <li class="nav-item hover-scale">
+                    <a href="https://me.yucheng.me" class="nav-link text-white hover-color-text">
+                        <span class="iconify-inline" data-icon="bxs:user-circle"></span>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://blog.yucheng.me" class="nav-link text-white hover-color-text">
+                        <span class="iconify-inline" data-icon="cib:blogger-b"></span>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://no.yucheng.me" class="nav-link text-white hover-color-text">
+                        <span class="iconify-inline" data-icon="zondicons:network"></span>
+                        <span>Wiki</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://slides.yucheng.me" class="nav-link text-white hover-color-text">
+                        <span class="iconify-inline" data-icon="heroicons-solid:presentation-chart-bar"></span>
+                        <span>Slides</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-7">
-              <div class="content">
-                <p>
-                  Hi, I'm Yu-Cheng! I am currently majoring in electrical engineering in university. I like to learn new skills from the Internet and make notes of what I learn to help me remember. Learn from errors, grow from failures. Try to solve the difficulties encountered in learning.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-7">
-              <ul>
-                <li><a href="https://me.yucheng.me">About me</a>：My skills and projects.</li>
-                <li><a href="https://blog.yucheng.me">Blog</a>：My thoughts and notes.</li>
-                <li><a href="https://no.yucheng.me">Wiki</a>：My personal knowledge base.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <span class="icon is-large">
-                <a href="https://github.com/YuCheng21" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-              </span>
-              <span class="icon is-large">
-                <a href="https://t.me/yucheng21" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
-              </span>
-              <span class="icon is-large">
-                <a href="https://www.facebook.com/yucheng621" target="_blank"
-                  ><i class="fab fa-facebook fa-2x"></i
-                ></a>
-              </span>
-              <span class="icon is-large">
-                <a href="mailto:me@fyc621@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+    </div>
+</nav>
+<main class="min-vh-100 bg-primary bg-opacity-25">
+    <div class="container d-flex align-items-center flex-column h-100 py-5">
+        <img class="rounded-circle" style="max-width: 300px" src="resources/img/avatar/avatar-3.jpg" alt="avatar"/>
+        <ul class="list-inline d-flex justify-content-center flex-wrap display-5">
+            <li class="list-inline-item">
+                <a href="https://github.com/YuCheng21"><span class="iconify-inline icon-rotate" data-icon="akar-icons:github-fill"></span></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://t.me/yucheng21"><span class="iconify-inline icon-rotate" data-icon="fa-brands:telegram"></span></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/yucheng621"><span class="iconify-inline icon-rotate" data-icon="akar-icons:facebook-fill"></span></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="mailto:me@fyc621@gmail.com"><span class="iconify-inline icon-rotate" data-icon="icomoon-free:mail4"></span></a>
+            </li>
+        </ul>
+        <h1 class="d-flex justify-content-center flex-wrap">
+            <span>Feng, Yu-Cheng</span>
+        </h1>
+        <p class="w-75 fs-5">Hi, I'm Yu-Cheng! I am currently majoring in electrical engineering in university. I like to learn new skills from the Internet and make notes of what I learn to help me remember. Learn from errors, grow from failures. Try to solve the difficulties encountered in learning.</p>
+    </div>
+</main>
+</body>
 </html>
