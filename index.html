@@ -68,7 +68,7 @@
 </nav>
 <main class="min-vh-100 bg-primary bg-opacity-25">
     <div class="container d-flex align-items-center flex-column h-100 py-5">
-        <img class="rounded-circle" style="max-width: 300px" src="resources/img/avatar/avatar-3.jpg" alt="avatar"/>
+        <img class="rounded-circle" style="max-width: 300px" src="resources/img/avatar/avatar-3.jpg" alt="avatar" id="avatar"/>
         <ul class="list-inline d-flex justify-content-center flex-wrap display-5">
             <li class="list-inline-item">
                 <a href="https://github.com/YuCheng21"><span class="iconify-inline icon-rotate" data-icon="akar-icons:github-fill"></span></a>
@@ -91,4 +91,19 @@
     </div>
 </main>
 </body>
+<script>
+    const imageUrls = [
+        "resources/img/avatar/avatar-1.jpg",
+        "resources/img/avatar/avatar-2.jpg",
+        "resources/img/avatar/avatar-3.jpg",
+        "resources/img/avatar/avatar-4.jpg",
+        "resources/img/avatar/avatar-5.jpg",
+    ]
+    const img = document.getElementById('avatar');
+    var count = 1
+    window.setInterval(function () {
+        img.src = imageUrls[(count % imageUrls.length)];
+        count++;
+    }, 15000)
+</script>
 </html>
