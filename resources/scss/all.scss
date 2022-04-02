@@ -4,62 +4,18 @@
 @import '../../node_modules/bootstrap/scss/mixins';
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
+// Base
+@import "./global/base";
+// Layout
+@import "./layout/scrollbar";
+@import "./layout/main";
+@import "./utilities/rotate";
+@import "./utilities/active";
+@import "./utilities/hover";
+@import "./utilities/shadow";
 
-body {
-  font-family: "Nunito", "Noto Sans TC", sans-serif;
-}
-
-main{
-  padding-top: 76px;
-}
-
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-track:hover {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: tint-color($primary, 40%);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: tint-color($success, 40%);
-}
-
-.icon-rotate {
-  transition: .5s;
-  &:hover{
-    transition: .5s;
-    transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+@include media-breakpoint-down(sm) {
+  .fs-5{
+    font-size: 0.9rem !important;
   }
-}
-
-.hover-scale {
-  transform: scale(1);
-  transition: .3s ease;
-  &:hover {
-    transform: scale(1.02);
-  }
-}
-
-.hover-color-text:hover {
-  color: tint-color($success, 40%) !important;
-}
-
-.ds-100 {
-  filter: drop-shadow(0px 0px 1px black);
-}
-
-.text-active{
-  color: tint-color($warning, 40%) !important;
 }

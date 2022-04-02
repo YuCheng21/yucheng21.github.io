@@ -11122,10 +11122,6 @@ body {
   font-family: "Nunito", "Noto Sans TC", sans-serif;
 }
 
-main {
-  padding-top: 76px;
-}
-
 ::-webkit-scrollbar {
   width: 16px;
 }
@@ -11147,6 +11143,10 @@ main {
   background-color: #7eca8f;
 }
 
+main {
+  padding-top: 76px;
+}
+
 .icon-rotate {
   transition: 0.5s;
 }
@@ -11155,6 +11155,10 @@ main {
   transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+}
+
+.text-active {
+  color: #ffda6a !important;
 }
 
 .hover-scale {
@@ -11173,8 +11177,10 @@ main {
   filter: drop-shadow(0px 0px 1px black);
 }
 
-.text-active {
-  color: #ffda6a !important;
+@media (max-width: 575.98px) {
+  .fs-5 {
+    font-size: 0.9rem !important;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

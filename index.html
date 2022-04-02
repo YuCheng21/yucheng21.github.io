@@ -6,19 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thomas Feng</title>
-
+    <!--  Favicon  -->
     <link rel="shortcut icon" href="resources/img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png"/>
-    <link rel="manifest" href="resources/img/favicon/site.webmanifest"/>
+<!--    <link rel="manifest" href="resources/img/favicon/site.webmanifest"/>-->
     <link rel="mask-icon" href="resources/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#444444"/>
     <meta name="theme-color" content="#ffffff"/>
-
+    <!--  Custom CSS  -->
     <link rel="stylesheet" href="resources/scss/all.css">
+    <!--  Bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <!--  Iconify  -->
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
 </head>
 <body>
@@ -68,7 +70,9 @@
 </nav>
 <main class="min-vh-100 bg-primary bg-opacity-25">
     <div class="container d-flex align-items-center flex-column h-100 py-5">
-        <img class="rounded-circle" style="max-width: 300px" src="resources/img/avatar/avatar-3.jpg" alt="avatar" id="avatar"/>
+        <div style="max-width: 300px">
+            <img class="rounded-circle img-fluid" src="resources/img/avatar/avatar-3.jpg" alt="avatar" id="avatar"/>
+        </div>
         <ul class="list-inline d-flex justify-content-center flex-wrap display-5">
             <li class="list-inline-item">
                 <a href="https://github.com/YuCheng21"><span class="iconify-inline icon-rotate" data-icon="akar-icons:github-fill"></span></a>
@@ -91,19 +95,5 @@
     </div>
 </main>
 </body>
-<script>
-    const imageUrls = [
-        "resources/img/avatar/avatar-1.jpg",
-        "resources/img/avatar/avatar-2.jpg",
-        "resources/img/avatar/avatar-3.jpg",
-        "resources/img/avatar/avatar-4.jpg",
-        "resources/img/avatar/avatar-5.jpg",
-    ]
-    const img = document.getElementById('avatar');
-    var count = 1
-    window.setInterval(function () {
-        img.src = imageUrls[(count % imageUrls.length)];
-        count++;
-    }, 15000)
-</script>
+<script src="resources/js/all.js"></script>
 </html>

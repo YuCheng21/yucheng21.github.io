@@ -1,0 +1,11 @@
+.hover-scale {
+  transform: scale(1);
+  transition: .3s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.hover-color-text:hover {
+  color: tint-color($success, 40%) !important;
+}

@@ -1,0 +1,9 @@
+.icon-rotate {
+  transition: .5s;
+  &:hover{
+    transition: .5s;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
